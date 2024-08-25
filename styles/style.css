@@ -1,3 +1,5 @@
+/* Rare beauty form fonts */
+
 @font-face {
     font-family: 'ogg_triallight_italic';
     src: url('/fonts/ogg-lightitalic-bf646c18fc49421-webfont.woff2') format('woff2'),
@@ -30,6 +32,8 @@
     font-style: normal;
 
 }
+
+/* Css reset */
 
 /*
   1. Use a more-intuitive box-sizing model.
@@ -78,4 +82,46 @@
     isolation: isolate;
   }
 
-  
+  /* Rare beauty form style sheet */
+
+  :root {
+    --border-size: 10px;
+  }
+
+  body {
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-container {
+    height: 400px;
+    width: 1000px;
+    display: flex;
+    background-color: antiquewhite;
+  }
+
+  .form-left {
+    width: 300px;
+  }
+
+  .form-right {
+    width: 500px;
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 10rem;
+  }
+
+  .form-container, .form-left {
+    border-radius: var(--border-size);
+  } 
+
+  .form-left img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: var(--border-size);
+    border-bottom-left-radius: var(--border-size);
+  }
