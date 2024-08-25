@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'ogg_triallight_italic';
+    src: url('/fonts/ogg-lightitalic-bf646c18fc49421-webfont.woff2') format('woff2'),
+         url('/fonts/ogg-lightitalic-bf646c18fc49421-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ogg_trialmedium';
+    src: url('/fonts/ogg-medium-bf646c18fc45bd0-webfont.woff2') format('woff2'),
+         url('/fonts/ogg-medium-bf646c18fc45bd0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ogg_trialthin';
+    src: url('ogg-thin-bf646c18fc48f66-webfont.woff2') format('woff2'),
+         url('ogg-thin-bf646c18fc48f66-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
