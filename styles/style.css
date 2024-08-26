@@ -173,12 +173,23 @@
     color: var(--red);
   }
 
-  input {
+  input{
     appearance: none;
+    padding: 0.5rem;
+    height: 2rem;
     width: 150px;
     border: 2px solid var(--dark-brown);
-    
+    border-radius: var(--border-size);
+    background-color: var(--white);
+    outline: none; /* removes the default outline when input is being focus */
   }
 
+  input:focus {
+    border: 3px solid var(--red);
+  }
+
+  input:hover {
+    background-color: var(--light-brown);
+  }
 
   
