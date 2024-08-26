@@ -106,7 +106,9 @@
     justify-content: center;
     align-items: center;
     font-family: ogg_trialmedium;
-    background-color: var(--light-brown);
+    background: linear-gradient(217deg, #e2cdbcb6, rgba(225, 0, 0, 0) 70.71% ),
+                linear-gradient(127deg, #7b1541bd, rgba(0,225,0,0) 70.71% ),
+                linear-gradient(323deg, #46211fb6, rgba(0, 0, 225, 0) 70.71% );
   }
 
   .form-container {
@@ -154,7 +156,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    gap: 10px 10px;
 
   }
 
@@ -195,12 +196,18 @@
     border-bottom: 2px solid var(--purple) ;
   }
 
-  input:focus:required:invalid {
-    border-bottom: 2px solid red;
+  input:invalid + span {
+    content: url(/img/alert-triangle\ \(1\).svg);
+    height: 1rem;
+  }
+  
+  input:valid {
+    border-bottom: 2px solid rgb(32, 195, 32);
   }
 
-  span {
-    color: red;
+
+  input + span {
+    position: relative;
   }
 
   .submit-btn {
