@@ -154,7 +154,11 @@
 
   }
 
-  h2, .logo {
+  h1 {
+    word-spacing: 2px;
+  }
+
+  h1, .logo, p {
     margin-bottom: 1rem;
   }
 
@@ -165,14 +169,15 @@
      gap: 10px;
   }
 
+  label {
+    color: var(--red);
+  }
+
   input {
     appearance: none;
     width: 150px;
-    border: 2px solid var(--dark-brown)
-  }
-
-  p {
-    margin-bottom: 1rem;
+    border: 2px solid var(--dark-brown);
+    
   }
 
 
