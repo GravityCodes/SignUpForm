@@ -42,12 +42,20 @@
                 </div>
                 <div class="form-input">
                     <label for="password">Password <span ariel-label="required">*</span></label>
-                    <input type="password" name="password" id="password" minlength="12" required>
+                    <input type="password" 
+                           name="password" 
+                           id="password" 
+                           title="At least 8 or more characters" 
+                           pattern=".{8,}" required>
                     <span></span>
                 </div>
                 <div class="form-input">
                     <label for="confirm_password"> Confirm Password <span ariel-label="required">*</span></label>
-                    <input type="password" name="confirm_password" id="confirm_password" minlength="12" required>
+                    <input type="password"
+                           name="confirm_password"
+                           id="confirm_password"  
+                           title="At least 8 or more characters"
+                           pattern=".{8,}" required>
                     <span></span>
                 </div>
             </form>
