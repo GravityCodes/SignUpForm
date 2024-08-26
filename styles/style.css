@@ -101,7 +101,7 @@
   }
 
   body {
-    height: 99vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,9 +114,9 @@
     width: 1000px;
     display: flex;
     background-color: transparent;
-    border: 2px solid var(--white);
+    border: 1px solid var(--light-brown);
     box-shadow: 1px 1px 5px var(--black);
-    
+    backdrop-filter: blur(3px);    
   }
 
   .form-left {
@@ -153,7 +153,8 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 50px;
+    justify-content:space-between;
+    gap: 10px 10px;
 
   }
 
@@ -169,21 +170,21 @@
   .form-input {
      display: flex;   
      flex-direction: column;
-     gap: 10px;
   }
 
   label {
-    color: var(--red);
+    color: var(--purple);
   }
 
   input{
     padding: 0.5rem;
     height: 2rem;
-    width: 150px;
+    width: 220px;
     border: none;
     border-bottom: 2px solid var(--dark-brown);
     background-color: transparent;
     outline: none; /* removes the default outline when input is being focus */
+    transition: all 0.1s;
   }
 
   input:focus {
@@ -207,7 +208,6 @@
     height: 50px;
     margin-top: 10px;
     border: none;
-    border-bottom: 2px solid var(--white);
     border-radius: var(--border-size);
     background-color: var(--purple);
     color: var(--white);
@@ -218,6 +218,4 @@
   .submit-btn:hover {
     background-color: var(--white);
     color: var(--purple);
-    border-bottom: 2px solid var(--purple);
-  
   }
